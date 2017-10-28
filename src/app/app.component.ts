@@ -1,7 +1,24 @@
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
 
-@Component({
+
+
+@Component ({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: 'app/app.component.html' 
 })
-export class AppComponent  { name = 'Angular'; }
+
+export class AppComponent {
+  appTitle: string = 'Welcome';
+  appStatus: boolean = true;
+  appList: any[] = [ {
+    "ID": "1",
+    "Name" : "One",
+    "url": 'app/Images/images_download.jpg'
+ },
+
+ {
+    "ID": "2",
+    "Name" : "Twos",
+    "url": 'app/Images/images_download.jpg'
+ } ];
+}
